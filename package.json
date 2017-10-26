@@ -1,0 +1,23 @@
+{
+    "name": "percent",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "node index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fuchao2012/percent.git"
+    },
+    "keywords": [],
+    "author": "fuchao.zheng <zhengfuchao2008@126.com> (https://fuchao2012.github.io/)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fuchao2012/percent/issues"
+    },
+    "homepage": "https://github.com/fuchao2012/percent#readme",
+    "dependencies": {
+        "progress": "^2.0.0"
+    }
+}
