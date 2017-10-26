@@ -10,18 +10,15 @@ var percent = ((now - start) / (end - start)) * 100
 
 var progress = new Progress(':bar', {
     total: 100,
-    curr: 0,
-    complete: '█',
-    incomplete: '▒'
+    curr: percent,
+    complete: '◼',
+    imcomplete: '◻'
 });
-
-var timer = setInterval(function() {
+console.log('\n\nThis year ' + percent.toString().slice(0, 5) + '% is gone!')
+setInterval(function() {
     progress.tick()
-    if (progress.curr == Math.ceil(percent)) {
-        progress.interrupt('\n\nThis year ' + percent.toString().slice(0, 5) + '% is gone!\n')
-        clearInterval(timer);
-    } else if (progress.complete) {
-        console.log('\n\nHappy new Year')
+    if (progress.complete) {
+        console.log('\ncomplete\n');
         clearInterval(timer);
     }
-}, 50);
+}, 100);

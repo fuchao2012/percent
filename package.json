@@ -1,10 +1,13 @@
 {
-    "name": "percent",
+    "name": "percent-of-year",
     "version": "1.0.0",
-    "description": "",
+    "description": "percent of year",
     "main": "index.js",
     "scripts": {
         "test": "node index"
+    },
+    "bin": {
+        "percent": "index.js"
     },
     "repository": {
         "type": "git",
