@@ -1,6 +1,6 @@
 {
     "name": "percent-of-year",
-    "version": "1.0.1",
+    "version": "2.0.1",
     "description": "percent of year",
     "main": "index.js",
     "scripts": {
